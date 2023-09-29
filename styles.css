@@ -1,0 +1,280 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggler{
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.iconnavbar{
+  margin-left: 20px;
+}
+
+
+#side_nav{
+  position: sticky;
+  background: rgb(33,37,41);
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.2s;
+}
+
+.input-search{
+  border-radius: 12px;
+}
+
+.content{
+  min-height: 100vh;
+  width: 100%;
+}
+
+hr.h-color{
+  background: #ffffff;
+}
+
+.sidebar li.active{
+  background: #eee;
+  border-radius: 8px;
+}
+
+.sidebar li.active a, .sidebar li.active a:hover{
+  color: #000;
+}
+
+.sidebar li a{
+  color: #fff;
+}
+
+
+@media(max-width: 767px){
+  #side_nav{
+    margin-left: -250px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1;
+  }
+  #side_nav.active{
+    margin-left: 0;
+  }
+}
+
+.container-fluid{
+  padding: 0px;
+}
+
+.content{
+padding: 0px;
+ background: rgb(235,241,243);
+ /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,53,55,1) 35%, rgba(31,33,33,1) 100%);*/
+}
+
+.landpage{
+  padding: 5% 5% 5% 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-content{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(0, 0, 0);
+
+}
+
+.dashboard-content h1{
+  font-size: 3rem;
+}
+
+.logotrans{
+  background-color: rgb(235,241,243);
+  border-radius: 50%;
+  transition: 0.5s;
+  min-width: 300px;
+}
+.logotrans:hover{
+  transform: scale(1.1);
+}
+
+.mv{
+  width: 100px;
+  height: 50px;
+  margin-right: 10px ;
+  font-size: 15px;
+  border-radius: 35px;
+  color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: white;
+  background-color: black;
+  cursor: pointer;
+  transition: background-color 0.5s ;
+}
+
+.mv:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-color: black;
+  border-width: 1px;
+}
+
+.titlecard{
+  z-index: 999;
+  margin-top: 0px;
+  position: relative;
+}
+
+.titlecard video{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+
+}
+
+.video-title{
+  background-color: rgb(50, 56, 63);
+  font-size: 5em;
+  color: #ffffff;
+  mix-blend-mode: multiply;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+
+/*
+.forsale{
+  margin: 0;
+  padding: 20px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.body-left h1,.body-right h1{
+  color: rgb(0, 0, 0);
+}
+
+
+.itembox-item{
+  background-color: rgb(218,214,203);
+  width: 200px;
+  transition: 0.7s ;
+  border-radius: 20px;
+  max-width: 100px;
+}
+
+.itembox-desc{
+  padding: 10px;
+}
+
+.itembox-item:hover{
+  transform: scale(1.1);
+}
+*/
+.member h1{
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.member{
+  background-color: rgb(0, 0, 0);
+  padding-top: 20px;
+}
+
+
+.row{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.card{
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgb(235,241,243);
+  transition: all 0.5s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  border-color: gold;
+  border-width: 6px;
+}
+
+#bronze{
+  background-color: #a44200;
+  background-image: linear-gradient(315deg, #a44200 0%, #f2c17d 74%);
+  
+}
+
+#silver{
+  background: linear-gradient(to bottom, #C0C0C0 0%, #B1B1B1 100%);
+}
+
+#gold{
+  background-color: #fec84e;
+  background-image: linear-gradient(315deg, #fec84e 0%, #ffdea8 74%); 
+}
+
+
+.itembox i{
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 25px;
+  transition: 0.4s;
+  margin-bottom: 10px;
+  color: rgb(111,134,149);
+  transition: all .5s;
+}
+
+.itembox h5{
+  color: #7b7a7a;
+  margin-bottom: 10px;
+}
+
+.itembox i:hover{
+  transform: scale(1.1);
+}
+
+.about p{
+  font-size: 20px;
+}
+
+#ggc{
+  background-color: rgb(33,37,41);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+h1{
+  margin: 0;
+}
+
+.itembox{
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px 0 15px 0 ;
+  color: rgb(0, 0, 0);
+  max-width: 362px;
+  border-style: none;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .15);
+}
+
+.pic{
+  max-width: 342px;
+  border-radius: 15px 0 15px 0;
+  margin-bottom: 10px;
+}
+
+#jct{
+  margin-left: 0px;
+}
